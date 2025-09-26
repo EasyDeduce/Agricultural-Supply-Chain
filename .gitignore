@@ -1,0 +1,60 @@
+# --- OS & Editor junk ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Node / npm / yarn ---
+node_modules/
+# Lockfiles should be committed; do NOT ignore package-lock.json or yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Env files & local configs ---
+.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+
+# --- Hardhat build artifacts & cache ---
+artifacts/
+cache/
+# Hardhat coverage (if used)
+coverage/
+coverage.json
+
+# --- Frontend build output (CRA) ---
+frontend/build/
+
+# --- Logs & temp ---
+*.log
+logs/
+.tmp/
+tmp/
+*.tmp
+
+# --- PQC key material (sensitive) ---
+backend/keys/
+# If keys are ever elsewhere, ignore generic key files (uncomment with care)
+# *.key
+
+# --- Misc build outputs ---
+dist/
+.out/
+.next/
+
+# --- TypeScript cache (if present) ---
+*.tsbuildinfo
+
+# --- Editor/Tool caches ---
+.eslintcache
+.nyc_output/
+
+# --- OS-specific ---
+Icon?

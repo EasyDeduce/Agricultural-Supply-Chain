@@ -1,0 +1,40 @@
+{
+  "name": "agrichain",
+  "version": "1.0.0",
+  "description": "Blockchain Supply Chain for Agricultural Products",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:goerli": "hardhat run scripts/deploy.js --network goerli",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "chain": "hardhat node"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "supply-chain",
+    "agriculture",
+    "traceability",
+    "dapp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "concurrently": "^8.0.1",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.14.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3",
+    "docker": "^1.0.0",
+    "express": "^5.1.0"
+  }
+}
